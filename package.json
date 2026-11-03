@@ -1,0 +1,8 @@
+{
+  "name": "sikap-soto-betawi-88",
+  "version": "1.0.0",
+  "description": "Sistem Informasi Kasir dan Pembayaran (SIKAP) berbasis web untuk UMKM Soto Betawi 88 Kelapa Gading",
+  "main": "server.js",
+  "scripts": { "start": "node server.js" },
+  "dependencies": { "better-sqlite3": "^12.0.0", "express": "^4.21.0" }
+}
