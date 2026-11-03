@@ -120,5 +120,11 @@ app.delete('/api/users/:u', auth('pemilik'), (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-if (require.main === module) app.listen(PORT, () => console.log('SIKAP berjalan di http://localhost:' + PORT));
+
+if (require.main === module) {
+  app.listen(PORT, '0.0.0.0', () => {
+    console.log('SIKAP berjalan di port ' + PORT);
+  });
+}
+
 module.exports = app;
